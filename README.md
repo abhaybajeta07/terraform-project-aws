@@ -1,0 +1,1 @@
+# Project for deploying application stack on aws including VPC, ELB, security groups and other services through Terraform.

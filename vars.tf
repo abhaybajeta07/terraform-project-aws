@@ -24,7 +24,7 @@ variable "USERNAME" {
 }
 
 variable "MYIP" {
-  default = "183.83.39.124/32"
+  default = " 192.168.1.3/32"
 }
 
 variable "rmquser" {
@@ -92,5 +92,5 @@ variable "PrivSub2CIDR" {
 }
 
 variable "PrivSub3CIDR" {
-  default = "172.21.5.0/24"
+  default = "172.21.6.0/24"
 }

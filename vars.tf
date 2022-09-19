@@ -3,10 +3,10 @@ variable "AWS-REGION" {
 }
 
 variable "AMI" {
-  type = map()
+  type = map(any)
   default = {
-    us-east-2 = "ami-02f3416038bdb17fb"
-    us-east-1 = "ami-06489866022e12a14"
+    us-east-2  = "ami-02f3416038bdb17fb"
+    us-east-1  = "ami-06489866022e12a14"
     ap-south-1 = "ami-06489866022e12a14"
   }
 }
@@ -40,7 +40,7 @@ variable "dbuser" {
 }
 
 variable "dbpass" {
-  default = admin123
+  default = "admin123"
 }
 
 variable "dbname" {
@@ -49,7 +49,7 @@ variable "dbname" {
 
 variable "instance_count" {
   default = "1"
-}     #manipulate instance number
+} #manipulate instance number
 
 variable "VPC_NAME" {
   default = "vprofile-VPC"

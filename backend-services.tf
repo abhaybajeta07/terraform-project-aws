@@ -9,9 +9,7 @@ resource "aws_db_subnet_group" "vprofile-rds-subgrp" {
 resource "aws_elasticache_subnet_group" "vprofile-ecache-subgroup" {
   name = "vprofile-ecache-subgroup"
   subnet_ids = [module.vpc.private_subnets[0], module.vpc.private_subnets[1], module.vpc.private_subnets[2]]
-  tags = {
-    Name = "Subnet for e-cache"
-  }
+
 }
 
 resource "aws_db_instance" "vprofile-rds" {
